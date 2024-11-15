@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(22, 22, 22);
+    color: wheat;
+}
+button{
+    font-size: large;
+    background-color: wheat;
+    font-style: oblique;
+}
+table,th,td{
+    row-gap: 20em;
+    padding: 10 px; 
+    text-align: center;
+    border: 1px solid wheat;
+    font-style: italic;
+}

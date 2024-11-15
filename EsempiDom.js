@@ -24,12 +24,47 @@ function handleClick(){
     // p1.style.color = "blue";
     // p1.style.backgroundColor = "orange";
     
-    btn.addEventListener("click", function(){
+    btn.addEventListener("click", function () {
         p1.classList.remove("myClass");
-    })
+    });
+
+    //CREATING A PARAGRAPH
+    const newPar = document.createElement("p");
+    newPar.textContent = "-Paragraph created by JS-"
+    //CREATING A DIV
+    const newDiv = document.createElement("div");
+
+    newDiv.appendChild(newPar); //p inside div as last element
+    document.body.appendChild(newDiv); //Inserting div at the end of the body
+
+    const input = document.querySelector("#taskInput");
+    const btnAdd = document.querySelector("#toDoList button");
+    btnAdd.addEventListener("click", function (e) {
+        const newLi = document.createElement("li")
+        const text = input.value;
+        newLi.textContent = text;
+        newLi.addEventListener("click",()=>{
+            this.remove();
+        });
+        const ul = document.querySelector("#toDoList div ul");
+        ul.appendChild(newLi);
+        input.value = "";
+        btnAdd.disabled = true;
+    });
+    
+    document.querySelector("#taskInput").addEventListener("input", function () {
+        if (input.value.trim().length > 0) {
+            btnAdd.disabled = false;               
+        } else {
+            btnAdd.disabled = true;
+        }
+    });
+    
 };
 
-// window.addEventListener("load", handleClick);
 
+
+
+// window.addEventListener("load", handleClick);
 document.addEventListener("DOMContentLoaded", handleClick);
 
