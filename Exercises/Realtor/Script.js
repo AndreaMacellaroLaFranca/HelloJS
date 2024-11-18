@@ -41,7 +41,7 @@ function handleClick() {
         inputDescription.value = "";
         inputSquareMeters.value = "";
         inputPricePerSQMT.value = "";
-
+        
     });
 
 };

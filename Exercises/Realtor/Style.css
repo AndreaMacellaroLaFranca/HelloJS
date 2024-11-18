@@ -64,8 +64,9 @@ input, hr {
     width: 280px;
     height: 380px;
     padding: 20px;
-    background-color: wheat;
+    background-color: rgb(215, 216, 218);
     border-radius: 5px;
+
 }
 
 #houseHeading {
