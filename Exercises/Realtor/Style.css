@@ -3,7 +3,6 @@ html {
     color: whitesmoke;
     font-family: Georgia, 'Times New Roman', Times, serif;
     overflow: hidden;
-
 }
 
 input[type="text"] {
@@ -31,7 +30,6 @@ input, hr {
     width: 250px;
     height: 35px;
     background-color: whitesmoke;
-
 }
 
 #bottom {
@@ -48,7 +46,6 @@ input, hr {
     transition: background-color 0.3s;
     margin-top: 420px;
     margin-left: -276px;
-
 }
 
 #main {
@@ -63,14 +60,12 @@ input, hr {
 
 #house {
     margin-top: 20px;
-
     margin-left: 55px;
     width: 280px;
     height: 380px;
     padding: 20px;
     background-color: wheat;
     border-radius: 5px;
-    /* Removed absolute positioning to allow flexbox to handle the positioning */
 }
 
 #houseHeading {
@@ -91,5 +86,4 @@ input, hr {
     margin-top: 30px;
     display: block;
     color: black;
-
 }
