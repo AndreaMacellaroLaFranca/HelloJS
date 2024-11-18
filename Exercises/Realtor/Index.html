@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realtor Admin</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <hr>
+    <section class="main" id="main">
+        <form action="">
+            <label for="houseName">House Name:</label>
+            <div>
+                <input type="text" id="houseName" class="houseName" name="houseName" placeholder="Insert house name">
+            </div>
+        
+            <label for="imageUpload">Upload image: </label>
+            <div>
+                <input type="file" id="imageUpload" class="houseImg" name="houseImg" accept="image/png, image/jpeg" />
+            </div>
+        
+            <label for="squareMeters">Square Meters:</label>
+            <div>
+                <input type="text" id="squareMeters" class="squareMeters" name="squareMeters" placeholder="Insert total square meters">
+            </div>
+        
+            <label for="pricePerSQMT">Price Per Square Meter:</label>
+            <div />
+            <input type="text" id="pricePerSQMT" class="pricePerSQMT" name="pricePerSQMT" placeholder="Insert price per square meter">
+            </div>
+        
+            <label for="description">Description:</label>
+            <div />
+            <input type="textarea" id="description" class="description" name="description" placeholder="Insert house description">
+            </div>
+        </form>
+        <button class="button" id="button" disabled>Add home</button>
+    </section>
+    
+   
+    <script src="Script.js"></script>
+</body>
+</html>
